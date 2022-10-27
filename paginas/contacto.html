@@ -27,11 +27,15 @@
 
 <body>
     <header> 
-        <a href="./index.html"><img src="../img/logo1b.png" alt="logo" class="img-logo"></a>
         <nav class="menu">
-            <ul>
+            <a href="../index.html"><img src="../img/logo1b.png" alt="logo" class="img-logo"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-button">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
                 <li><a href="../index.html">Bodega</a></li>
-                <li><a href="../paginas/productos.html">Productos</a></li>
+                <li><a class="active" href="../paginas/productos.html">Productos</a></li>
                 <li><a href="../paginas/cursos-y-cata.html">Cursos y Cata</a></li>
                 <li><a href="../paginas/contacto.html">Contacto</a></li>
             </ul>
@@ -65,7 +69,7 @@
                     <div class="formulario__grupo" id="grupo__telefono">
                         <label for="telefono" class="formulario__label">Teléfono</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="11 5555 5555">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1155555555">
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">El teléfono solo puede contener números</p>
@@ -103,15 +107,13 @@
                         
                     
                 </form>
-                <br>
-
+                <br><br><br>
                 <div class="mapa">
-                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d686124.1284622017!2d-67.93137676677927!3d-34.68816445952896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1666472236038!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            
-        
+                    <h1 class="textomapa">Estamos Aquí</h1>
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d686124.1284622017!2d-67.93137676677927!3d-34.68816445952896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1666472236038!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>               
                 
-            </div>
+        </div>
             
         </main>
         
@@ -122,6 +124,7 @@
                     <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                     <li><a href="https://www.github.com" target="_blank" class="github"><i class="fa-brands fa-github"></i></a></li>
+                    <p>© Todos los derechos reservados-Bodegas C&ds-</p>
                 </ul>
             </div>
         </footer>

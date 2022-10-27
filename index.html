@@ -14,16 +14,22 @@
 </head>
 <body>
     <header class="bodega-header">
-        <div id="fondo">
+        <nav class="menu">
             <a href="./index.html"><img src="./img/logo1b.png" alt="logo" class="img-logo"></a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="./index.html">Bodega</a></li>
-                    <li><a href="./paginas/productos.html">Productos</a></li>
-                    <li><a href="./paginas/cursos-y-cata.html">Cursos y Cata</a></li>
-                    <li><a href="./paginas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-button">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a class="active" href="./index.html">Bodega</a></li>
+                <li><a href="./paginas/productos.html">Productos</a></li>
+                <li><a href="./paginas/cursos-y-cata.html">Cursos y Cata</a></li>
+                <li><a href="./paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="fondo">
             <div id="historia">
                 <div class="imagen-historia">
                     <img src="./img/copa.jpg" alt="copa">
@@ -32,11 +38,8 @@
                 <h1>HISTORIA</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo consectetur sequi quam nesciunt natus maiores adipisci, ducimus provident dolor error sint tempora necessitatibus aperiam aliquid, incidunt eos neque ab.</p>
                 </div>
-
             </div>
         </div>
-    </header>
-    <main>
         <div class="elaboracion-separador">
             <p>ELABORACIÓN</p>
         </div>
@@ -74,6 +77,7 @@
                 <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                 <li><a href="https://www.github.com" target="_blank" class="github"><i class="fa-brands fa-github"></i></a></li>
+                <p>© Todos los derechos reservados-Bodegas C&ds-</p>
             </ul>
         </div>
     </footer>

@@ -84,7 +84,6 @@ if(document.querySelector('.contenedor-slider')){
     }
 
 }
-
 /*
 ------------------------------------ CONTACTO -----------------
 */

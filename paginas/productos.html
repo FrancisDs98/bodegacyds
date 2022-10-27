@@ -1,81 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>carrousel</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Noto+Serif&display=swap" rel="stylesheet">
+    <title>Productos|Bodega</title>    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="../css/estilosproductos.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/6651bc1b92.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <header>
-        <a href="./index.html"><img src="../img/logo1b.png" alt="logo" class="img-logo"></a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="../index.html">Bodega</a></li>
-                    <li><a href="../paginas/productos.html">Productos</a></li>
-                    <li><a href="../paginas/cursos-y-cata.html">Cursos y Cata</a></li>
-                    <li><a href="../paginas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+    <header class="bodega-header">
+        <nav class="menu">
+            <a href="../index.html"><img src="../img/logo1b.png" alt="logo" class="img-logo"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-button">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a class="active" href="../index.html">Bodega</a></li>
+                <li><a href="../paginas/productos.html">Productos</a></li>
+                <li><a href="../paginas/cursos-y-cata.html">Cursos y Cata</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <main  id="productos-body">
+
+    <div class="contenedor-login">
         <div class="contenedor-slider">
 
             <div class="slider">
 
-                
-                <div class="slide fade">
+                <!-- Slide 1 -->
+                <div class="slide fade ">
+                    <img src="../img/curso.jpg" alt="">
 
-                    <div class="img-fade">
-                        <img src="../img/botella.png" alt="copa">
-                    </div>
                     <div class="contenido-slider">
 
+                        
+
                         <p class="slider-texto">
-                            Codo a Codo - Malbec 
+                            Estamos ubicados en la provincia de Mendoza, en  el corazón de la zona vitivinícola argentina, famosa por sus Malbecs y otros vinos tintos. 
+                        </p>
                         </p>
 
                     </div>
 
                 </div>
 
-                
+                <!-- Slide 2 -->
                 <div class="slide fade">
-
-                    <div class="img-fade">
-                        <img src="../img/botella.png" alt="copa">
-                    </div>
+                    <img src="../img/uva.jpg" alt="">
 
                     <div class="contenido-slider">
 
+                        
 
                         <p class="slider-texto">
-                            Codo a Codo - Cabernet Sauvignon
+                            Ofrecemos degustaciones, visitas guiadas y cursos.
                         </p>
 
                     </div>
 
                 </div>
 
-               
-                <div class="slide fade">
-
-                    <div class="img-fade">
-                        <img src="../img/botella.png" alt="copa">
-                    </div>
+                <!-- Slide 3 -->
+                <div class="slide fade ">
+                    <img src="../img/bodega-3.jpg" alt="">
 
                     <div class="contenido-slider">
 
+                        
                         <p class="slider-texto">
-                            Codo a Codo - Merlot
+                            ¡¡¡Conocé nuestros productos!!!
                         </p>
 
                     </div>
@@ -97,7 +97,39 @@
             </div>
 
         </div>
-    </main>
+
+        <!--Productos-->
+
+        <div class="contenedor-texto">
+
+            <div class="contenedor-menu">
+
+                <h1 class="titulo">Nuestros Vinos</h1>
+                <div class="tarjeta1">
+                <h2 class="titulovinos">Blancos</h2>
+                    <p class="pvino">El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo, amarillo verdoso o amarillo oro. Se produce por la fermentación alcohólica de la pulpa no coloreada de uvas que pueden tener una piel de color blanco o negro, a fin de mantener un color amarillo transparente en el producto final. La amplia variedad de vinos blancos proviene de la gran cantidad de cepas y métodos de elaboración empleados, así como de la relación de azúcar residual.</p>
+                    <a class="link" href="../paginas/vinosblancos.html">+ Info</a>
+                </div>
+                      
+                <div class="tarjeta1">                            
+                <h2 class="titulovinos">Rosados</h2>
+                    <p class="pvino">El vino rosado es aquel que tiene algo del color típico del vino tinto, pero solo lo suficiente como para darle un color rosa, que puede ir del claro al fuerte casi violeta, según las uvas y las técnicas de producción usadas.</p>
+                    <a class="link" href="../paginas/vinosrosados.html" >+ Info</a>
+                </div>
+                
+                <div class="tarjeta1">
+                <h2 class="titulovinos">Tintos</h2>
+                    <p class="pvino">El vino tinto es un tipo de vino procedente mayormente de mostos de uvas tintas, con la elaboración pertinente para conseguir la difusión de la materia colorante que contienen los hollejos de la uva.</p>
+                    <a class="link" href="../paginas/vinostintos.html">+ Info</a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
     <footer>
         <div class="redes-container">
             <ul>
@@ -105,9 +137,11 @@
                 <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                 <li><a href="https://www.github.com" target="_blank" class="github"><i class="fa-brands fa-github"></i></a></li>
+                <p>© Todos los derechos reservados-Bodegas C&ds-</p>
             </ul>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="../js/app.js"></script>
+    
 </body>
 </html>

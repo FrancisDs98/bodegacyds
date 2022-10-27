@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinos Tintos</title>
+    <link rel="stylesheet" href="../css/estilosvinos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/6651bc1b92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="bodega-header">
+        <nav class="menu">
+            <a href="../index.html"><img src="../img/logo1b.png" alt="logo" class="img-logo"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-button">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a class="active" href="../index.html">Bodega</a></li>
+                <li><a href="../paginas/productos.html">Productos</a></li>
+                <li><a href="../paginas/cursos-y-cata.html">Cursos y Cata</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="app">
+      
+        <h1 class="title">Vinos Tintos</h1>
+        <div class="container">
+            <div class="card" v-for="vino of vinostintos">
+                <img :src="vino.image" :alt="vino.wine">
+                <h4>{{vino.wine}}</h4>                            
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/vinostintos.js"></script>
+</body>
+</html>

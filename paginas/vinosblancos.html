@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Vinos Blancos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Noto+Serif&display=swap" rel="stylesheet">
-    <link rel="shorcut icon" href="img/vino.png" type="ccs/image/x">
+    <link rel="stylesheet" href="../css/estilosvinos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/6651bc1b92.js" crossorigin="anonymous"></script>
-    <title>CGDS</title>
 </head>
 <body>
     <header class="bodega-header">
@@ -21,37 +21,23 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul class="nav-menu">
-                <li><a href="../index.html">Bodega</a></li>
+                <li><a class="active" href="../index.html">Bodega</a></li>
                 <li><a href="../paginas/productos.html">Productos</a></li>
-                <li><a class="active" href="../paginas/cursos-y-cata.html">Cursos y Cata</a></li>
+                <li><a href="../paginas/cursos-y-cata.html">Cursos y Cata</a></li>
                 <li><a href="../paginas/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main id="cursos-main">
-        <div class="titulo-cursos">
-            <h2>Nuestros Cursos</h2>
-        </div>
-
-        <div class="cristal">
-            <div  class="cristal-img">
-                <img src="../img/curso.jpg" alt="curso">
-            </div>
-            <div class="cristal-texto">
-                <h2>Vinos *basico*</h2>
-                <p>El curso está orientado a todo aquel que quiera iniciarse en el mundo del vino ya sea para aplicarlo en su ámbito profesional o como aficionados a esta maravillosa bebida. <a href="">Ver más</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="cristal">
-            <div  class="cristal-img">
-                <img src="../img/picnic-1853380_960_720.jpg" alt="curso">
-            </div>
-            <div class="cristal-texto">
-                <h2>Maridaje</h2>
-                <p>El curso de maridaje es perfecto para quien disfruta de las buenas experiencias gastronomicas acompañadas siempre de un vino adecuadamente especial para la ocación. <a href="">Ver más</a> </p>
-            </div>
+    <main>
+        <div id="app">
+        
+            <h1 class="title">Vinos Blancos</h1>
+            <div class="container">
+                <div class="card" v-for="vino of vinosblancos">
+                    <img :src="vino.image" :alt="vino.wine">
+                    <h4>{{vino.wine}}</h4>                            
+                </div>  
+            </div>        
         </div>
     </main>
     <footer>
@@ -65,6 +51,8 @@
             </ul>
         </div>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/vinosblancos.js"></script>
+    
 </body>
 </html>
